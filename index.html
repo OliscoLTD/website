@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title><!-- TODO: Brand -->Automation Lab & Hosting</title>
+<meta name="description" content="Automation, integrations, and hosting. We connect your tools, build n8n/Make.com workflows, and host reliable apps & websites." />
+<link rel="preconnect" href="https://assets.calendly.com" crossorigin>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  /* subtle animated underline */
+  .link-underline { background: linear-gradient(transparent 70%, rgba(79,70,229,.25) 0); transition: background-size .2s; background-size: 0% 100%; }
+  .link-underline:hover { background-size: 100% 100%; }
+</style>
+</head>
+<body class="bg-white text-slate-900 antialiased selection:bg-indigo-200/60">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 font-semibold">
+        <span class="h-8 w-8 rounded-xl bg-indigo-600"></span>
+        <span><!-- TODO brand -->Automation Lab</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#services" class="hover:text-slate-700">Services</a>
+        <a href="#stack" class="hover:text-slate-700">Tech</a>
+        <a href="#process" class="hover:text-slate-700">Process</a>
+        <a href="#pricing" class="hover:text-slate-700">Pricing</a>
+        <a href="#contact" class="inline-flex items-center rounded-lg bg-indigo-600 px-4 py-2.5 text-white font-semibold">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="max-w-7xl mx-auto px-5 pt-14 pb-10">
+    <div class="grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="text-xs uppercase tracking-wider text-indigo-600 font-bold">Automation • Integrations • Hosting</p>
+        <h1 class="mt-2 text-5xl font-extrabold leading-tight">Make your tools work together. <span class="text-indigo-600">Automatically.</span></h1>
+        <p class="mt-4 text-lg text-slate-600">We design n8n/Make.com workflows, build custom APIs & web apps, and host them on fast, reliable infrastructure.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#contact" class="inline-flex items-center rounded-xl bg-indigo-600 px-5 py-3 text-white font-semibold text-lg">Start a project</a>
+          <a href="#services" class="inline-flex items-center rounded-xl border border-slate-300 px-5 py-3 font-semibold text-lg hover:bg-slate-50">What we do</a>
+        </div>
+        <div class="mt-6 grid grid-cols-3 gap-3 text-sm">
+          <div class="rounded-xl border border-indigo-100 bg-indigo-50 px-3 py-2 text-indigo-900 text-center">Reduce admin</div>
+          <div class="rounded-xl border border-indigo-100 bg-indigo-50 px-3 py-2 text-indigo-900 text-center">Fewer errors</div>
+          <div class="rounded-xl border border-indigo-100 bg-indigo-50 px-3 py-2 text-indigo-900 text-center">Faster delivery</div>
+        </div>
+      </div>
+      <div class="rounded-2xl border border-slate-200 p-6">
+        <div class="grid grid-cols-2 gap-4 text-sm">
+          <div class="rounded-xl bg-slate-50 p-4">
+            <div class="text-3xl mb-1">🧩</div>
+            <p class="font-semibold">Integrations</p>
+            <p class="text-slate-600">Connect CRM, email, forms, storage, billing.</p>
+          </div>
+          <div class="rounded-xl bg-slate-50 p-4">
+            <div class="text-3xl mb-1">⚙️</div>
+            <p class="font-semibold">Automations</p>
+            <p class="text-slate-600">n8n & Make.com flows with error handling.</p>
+          </div>
+          <div class="rounded-xl bg-slate-50 p-4">
+            <div class="text-3xl mb-1">🖥️</div>
+            <p class="font-semibold">Web Apps</p>
+            <p class="text-slate-600">FastAPI/Node, Stripe, auth, dashboards.</p>
+          </div>
+          <div class="rounded-xl bg-slate-50 p-4">
+            <div class="text-3xl mb-1">☁️</div>
+            <p class="font-semibold">Hosting</p>
+            <p class="text-slate-600">S3/Cloudflare/Proxmox—monitoring & backups.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-extrabold text-center mb-12">Services</h2>
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+        <div class="bg-white shadow-lg rounded-2xl p-7">
+          <div class="text-4xl mb-2">🧠</div>
+          <h3 class="text-xl font-bold">Automation Design</h3>
+          <p class="text-slate-600 mt-1">Map processes, remove manual steps, add alerts & retries.</p>
+          <ul class="mt-4 text-sm text-slate-600 list-disc pl-5 space-y-1">
+            <li>Lead routing & follow-up</li>
+            <li>Review requests & reminders</li>
+            <li>Data sync across apps</li>
+          </ul>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-2xl p-7">
+          <div class="text-4xl mb-2">🔄</div>
+          <h3 class="text-xl font-bold">n8n / Make.com</h3>
+          <p class="text-slate-600 mt-1">No-code/low-code workflows with monitoring and versioning.</p>
+          <ul class="mt-4 text-sm text-slate-600 list-disc pl-5 space-y-1">
+            <li>Webhooks & schedulers</li>
+            <li>Error handling & retries</li>
+            <li>Secrets & environment setup</li>
+          </ul>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-2xl p-7">
+          <div class="text-4xl mb-2">🧪</div>
+          <h3 class="text-xl font-bold">Custom Integrations</h3>
+          <p class="text-slate-600 mt-1">When Zapier can’t—build APIs, webhooks, data pipelines.</p>
+          <ul class="mt-4 text-sm text-slate-600 list-disc pl-5 space-y-1">
+            <li>FastAPI / Node microservices</li>
+            <li>Auth (JWT/OAuth) & RBAC</li>
+            <li>Stripe, Twilio, SendGrid</li>
+          </ul>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-2xl p-7">
+          <div class="text-4xl mb-2">📦</div>
+          <h3 class="text-xl font-bold">Hosting & DevOps</h3>
+          <p class="text-slate-600 mt-1">From static sites to containerized apps with CI/CD.</p>
+          <ul class="mt-4 text-sm text-slate-600 list-disc pl-5 space-y-1">
+            <li>S3/CloudFront/Cloudflare</li>
+            <li>Docker/Proxmox/K8s (when needed)</li>
+            <li>Backups, uptime, alerts</li>
+          </ul>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-2xl p-7">
+          <div class="text-4xl mb-2">📈</div>
+          <h3 class="text-xl font-bold">Reporting & Dashboards</h3>
+          <p class="text-slate-600 mt-1">Pull data into simple, shareable views.</p>
+          <ul class="mt-4 text-sm text-slate-600 list-disc pl-5 space-y-1">
+            <li>Revenue & pipeline KPIs</li>
+            <li>Lead sources & conversion</li>
+            <li>Operational SLAs</li>
+          </ul>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-2xl p-7">
+          <div class="text-4xl mb-2">🧰</div>
+          <h3 class="text-xl font-bold">Support & Care</h3>
+          <p class="text-slate-600 mt-1">We keep the lights on and iterate.</p>
+          <ul class="mt-4 text-sm text-slate-600 list-disc pl-5 space-y-1">
+            <li>Monthly reviews</li>
+            <li>Change requests</li>
+            <li>Security updates</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack" class="py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-extrabold text-center mb-10">Tech We Use</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 text-sm">
+        <div class="rounded-xl border border-slate-200 px-3 py-2 text-center">n8n</div>
+        <div class="rounded-xl border border-slate-200 px-3 py-2 text-center">Make.com</div>
+        <div class="rounded-xl border border-slate-200 px-3 py-2 text-center">FastAPI</div>
+        <div class="rounded-xl border border-slate-200 px-3 py-2 text-center">Node/Express</div>
+        <div class="rounded-xl border border-slate-200 px-3 py-2 text-center">Postgres/MySQL</div>
+        <div class="rounded-xl border border-slate-200 px-3 py-2 text-center">Redis</div>
+        <div class="rounded-xl border border-slate-200 px-3 py-2 text-center">Stripe</div>
+        <div class="rounded-xl border border-slate-200 px-3 py-2 text-center">Twilio</div>
+        <div class="rounded-xl border border-slate-200 px-3 py-2 text-center">SendGrid</div>
+        <div class="rounded-xl border border-slate-200 px-3 py-2 text-center">S3/CloudFront</div>
+        <div class="rounded-xl border border-slate-200 px-3 py-2 text-center">Cloudflare</div>
+        <div class="rounded-xl border border-slate-200 px-3 py-2 text-center">Proxmox</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-extrabold text-center mb-12">How We Work</h2>
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div class="text-center rounded-2xl border border-slate-200 p-7">
+          <div class="text-5xl mb-2">🗺️</div>
+          <h3 class="text-lg font-bold">1) Audit</h3>
+          <p class="text-slate-600 mt-1">Understand your tools & bottlenecks.</p>
+        </div>
+        <div class="text-center rounded-2xl border border-slate-200 p-7">
+          <div class="text-5xl mb-2">🧩</div>
+          <h3 class="text-lg font-bold">2) Design</h3>
+          <p class="text-slate-600 mt-1">Map workflows, agree KPIs.</p>
+        </div>
+        <div class="text-center rounded-2xl border border-slate-200 p-7">
+          <div class="text-5xl mb-2">⚙️</div>
+          <h3 class="text-lg font-bold">3) Build</h3>
+          <p class="text-slate-600 mt-1">Automations, APIs, and hosting.</p>
+        </div>
+        <div class="text-center rounded-2xl border border-slate-200 p-7">
+          <div class="text-5xl mb-2">📊</div>
+          <h3 class="text-lg font-bold">4) Iterate</h3>
+          <p class="text-slate-600 mt-1">Monitor, report, improve.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING (simple) -->
+  <section id="pricing" class="py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-extrabold text-center mb-10">Simple Pricing</h2>
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="rounded-2xl border border-slate-200 p-8">
+          <h3 class="text-xl font-bold">Starter</h3>
+          <p class="text-3xl font-extrabold mt-1">£349<span class="text-base font-semibold text-slate-500"> / project</span></p>
+          <p class="text-slate-600 mt-2">1 small workflow or integration.</p>
+          <ul class="mt-4 text-sm text-slate-600 space-y-1">
+            <li>✔️ n8n/Make.com setup</li>
+            <li>✔️ 1–2 triggers, 3–5 steps</li>
+            <li>✔️ Basic logging</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border-2 border-indigo-600 p-8 shadow-sm">
+          <h3 class="text-xl font-bold">Growth</h3>
+          <p class="text-3xl font-extrabold mt-1">£749<span class="text-base font-semibold text-slate-500"> / project</span></p>
+          <p class="text-slate-600 mt-2">Multi-step flow, error handling, docs.</p>
+          <ul class="mt-4 text-sm text-slate-600 space-y-1">
+            <li>✔️ 3–6 triggers, 10–20 steps</li>
+            <li>✔️ Alerts & retries</li>
+            <li>✔️ Handover video</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-slate-200 p-8">
+          <h3 class="text-xl font-bold">Care Plan</h3>
+          <p class="text-3xl font-extrabold mt-1">£249<span class="text-base font-semibold text-slate-500"> / month</span></p>
+          <p class="text-slate-600 mt-2">Ongoing changes & monitoring.</p>
+          <ul class="mt-4 text-sm text-slate-600 space-y-1">
+            <li>✔️ Uptime & error alerts</li>
+            <li>✔️ 4h change requests / mo</li>
+            <li>✔️ Monthly review</li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-center text-sm text-slate-500 mt-4">Need custom hosting or a web app? <a class="link-underline font-semibold" href="#contact">Ask for a quote</a>.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-indigo-600 text-white text-center" id="consult">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-extrabold">Free 20-minute consultation</h2>
+      <p class="mt-2 text-indigo-100">Show us your current tools — we’ll suggest 2–3 quick wins.</p>
+      <div class="mt-6 shadow-2xl rounded-2xl overflow-hidden border border-indigo-400">
+        <!-- Calendly -->
+        <div class="calendly-inline-widget" data-url="https://calendly.com/olisco/30min" style="min-width:320px;height:700px;"></div>
+      </div>
+    </div>
+  </section>
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-16">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-3xl font-extrabold text-center mb-6">Contact</h2>
+      <form action="https://formspree.io/f/YOUR-FORMSPREE-ID" method="POST" class="grid gap-4">
+        <div class="grid md:grid-cols-2 gap-4">
+          <input class="border border-slate-300 rounded-lg px-4 py-3" name="name" placeholder="Your name" required>
+          <input class="border border-slate-300 rounded-lg px-4 py-3" name="company" placeholder="Company">
+        </div>
+        <div class="grid md:grid-cols-2 gap-4">
+          <input class="border border-slate-300 rounded-lg px-4 py-3" type="email" name="email" placeholder="Email" required>
+          <input class="border border-slate-300 rounded-lg px-4 py-3" name="phone" placeholder="Phone">
+        </div>
+        <textarea class="border border-slate-300 rounded-lg px-4 py-3" name="message" rows="4" placeholder="What do you want to automate or host?"></textarea>
+        <button class="inline-flex items-center justify-center rounded-xl bg-indigo-600 px-5 py-3 text-white font-semibold">Send</button>
+      </form>
+      <p class="text-center text-sm text-slate-500 mt-4">Prefer email? <a class="link-underline font-semibold" href="mailto:hello@olisco.co.uk"><!-- TODO email -->hello@olisco.co.uk</a></p>
+    </div>
+  </section>
+
+  <footer class="border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-5 py-8 text-sm text-slate-500 flex flex-wrap items-center justify-between gap-3">
+      <span>© <span id="y"></span> <!-- TODO brand -->Automation Lab</span>
+      <div class="flex items-center gap-4">
+        <a class="hover:text-slate-700" href="#services">Services</a>
+        <a class="hover:text-slate-700" href="#pricing">Pricing</a>
+        <a class="hover:text-slate-700" href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
